@@ -22,37 +22,21 @@ font-size: 30px;
   text-align: center;
 }
 
-  button.dc{
-    height: 40px;
-    width: 100px;
-    background-color: Transparent;
-    border-radius: 5%;
-        border: 1px solid #fff;;
-   
-  }
-    button.dc a{ 
- color: white;
-      font-size: 20px;
-      
-  }
-button.dc:hover  {
-  background-color: #5f5f5f;
-}
  
-  button.mail{
+  button.main{
     height: 40px;
     width: 100px;
     background-color: Transparent;
     border-radius: 5%;
         border: 1px solid #fff;;
   }
-    button.mail a{ 
+    button.main a{ 
  color: white;
       font-size: 20px;
       
   }
-button.mail:hover  {
-  background-color: #5f5f5f;
+button.main:hover  {
+  background-color: #FFB52E;
 }
 * {
     padding: 0;
