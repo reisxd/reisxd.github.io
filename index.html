@@ -5,52 +5,53 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="hi, im reis">
     <meta name="description" content="hi, im reis">
-    <meta name="og:image" content="https://cdn.discordapp.com/avatars/694963006970527826/698ab28f5efd05573aeb570b935d75ac.webp?size=256">
+    <meta name="og:image" content="https://cdn.discordapp.com/avatars/694963006970527826/698ab28f5efd05573aeb570b935d75ac.png">
     <meta name="theme-color" content="#FFB52E">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/avatars/694963006970527826/698ab28f5efd05573aeb570b935d75ac.webp?size=256">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <title>reis</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <style>
-  div.img img{
-  border-radius: 20%;
-    border: 3px solid #fff;
-    margin-top: 100px;
-    text-align: center;
-    }
-    i {
-      color: white;
-      font-size: 15px;
-      margin-bottom: 2px
-    }
-   
-   
-   
-  </style>
-  
   <body>
-                <center><div class="img"><img src="https://cdn.discordapp.com/avatars/694963006970527826/698ab28f5efd05573aeb570b935d75ac.webp?size=256" width="128px" height="128px" alt=""></div></center> 
-    <h1>
-      <b>reis</b>
-    </h1>
-    <div class="container"> 
-    <button class="main">
-        <i class="fab fa-discord"></i>
-    <a href="https://turkeybotlist.gq/join">Discord</a>
-  </button>
-     <button class="main">
-<i class="fas fa-envelope-open"></i>
-       <a href="mailto:reis@turkeybotlist.gq">Mail</a>
-  </button>
-    <button class="main">
-        <i class="fab fa-github"></i>
-    <a href="https://github.com/reisxd">GitHub</a>
-  </button>
-    </div>  
+    <div id="main">
+      <img src="https://cdn.discordapp.com/avatars/694963006970527826/698ab28f5efd05573aeb570b935d75ac.png?size=512" id="pfp">
+      <div id="name">reis</div>
+      <div id="founder-of">
+        <img src="turkeylist.svg" width="35px" height="35px">
+        <p>Founder of <a href="javascript:void(0)">Turkey Bot List</a></p>
+      </div>
+      <div id="sources">
+        <img id="github" src="github.svg" width="40px" height="40px">
+        <img id="discord" src="discord.svg" width="50px" height="50px">
+        <img id="mail" src="mail.svg" width="45px" height="45px">
+      </div>
+      <div id="qt">
+        Website designed with ❤️ by <a href="javascript:void(0)">null#8626</a>
+      </div>
+    </div>
   </body>
+  <script>
+    const redirect = (url) => { location.href = url; };
+    document.querySelector('#founder-of img').addEventListener('click', () => redirect("https://turkeylist.gq"));
+    document.querySelector('#founder-of a').addEventListener('click', () => redirect("https://turkeylist.gq"));
+    
+    document.querySelector('#github').addEventListener('click', () => redirect('https://github.com/reisxd'));
+    document.querySelector('#discord').addEventListener('click', () => redirect('https://turkeylist.gq/join'));
+    document.querySelector('#mail').addEventListener('click', () => redirect('mailto:reis@turkeylist.gq'));
+    
+    const Null = ['https://github.com/vierofernando', 'https://hug-me.now.sh/'];
+    
+    document.querySelector('#qt a').addEventListener('click', () => redirect(Null[Math.floor(Math.random() * Null.length)]));
+    
+    window.addEventListener('contextmenu', e => e.preventDefault());
+    window.addEventListener('keyup', e => e.preventDefault());
+    window.addEventListener('keydown', e => e.preventDefault());
+    
+    // the most big brain idea i've ever had
+    document.querySelector('script').remove();
+  </script>
 </html>
