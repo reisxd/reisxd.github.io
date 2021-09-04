@@ -18,15 +18,10 @@
   </head>
   <body>
     <div id="main">
-      <img src="https://cdn.discordapp.com/avatars/694963006970527826/698ab28f5efd05573aeb570b935d75ac.png?size=512" id="pfp">
+      <img src="https://media.discordapp.net/attachments/856771478262382642/883765572599447612/6c84a53f2744d236c53ba77429b683f3.png" id="pfp">
       <div id="name">reis</div>
-      <div id="founder-of">
-        <img src="turkeylist.svg" width="35px" height="35px">
-        <p>Founder of <a href="javascript:void(0)">Turkey Bot List</a></p>
-      </div>
       <div id="sources">
         <img id="github" src="github.svg" width="40px" height="40px">
-        <img id="discord" src="discord.svg" width="50px" height="50px">
         <img id="mail" src="mail.svg" width="45px" height="45px">
       </div>
       <div id="qt">
@@ -36,11 +31,7 @@
   </body>
   <script>
     const redirect = (url) => { location.href = url; };
-    document.querySelector('#founder-of img').addEventListener('click', () => redirect("https://turkeylist.gq"));
-    document.querySelector('#founder-of a').addEventListener('click', () => redirect("https://turkeylist.gq"));
-    
     document.querySelector('#github').addEventListener('click', () => redirect('https://github.com/reisxd'));
-    document.querySelector('#discord').addEventListener('click', () => redirect('https://turkeylist.gq/join'));
     document.querySelector('#mail').addEventListener('click', () => redirect('mailto:reis@turkeylist.gq'));
     
     const Null = ['https://github.com/vierofernando', 'https://hug-me.now.sh/'];
