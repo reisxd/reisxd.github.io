@@ -1,48 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta property="og:title" content="reis">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="hi, im reis">
-    <meta name="description" content="hi, im reis">
-    <meta name="og:image" content="https://cdn.discordapp.com/avatars/694963006970527826/698ab28f5efd05573aeb570b935d75ac.png">
-    <meta name="theme-color" content="#FFB52E">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/avatars/694963006970527826/698ab28f5efd05573aeb570b935d75ac.webp?size=256">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <title>reis</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="main">
-      <img src="https://media.discordapp.net/attachments/856771478262382642/883765572599447612/6c84a53f2744d236c53ba77429b683f3.png" id="pfp">
-      <div id="name">reis</div>
-      <div id="sources">
-        <img id="github" src="github.svg" width="40px" height="40px">
-        <img id="mail" src="mail.svg" width="45px" height="45px">
-      </div>
-      <div id="qt">
-        Website designed with ❤️ by <a href="javascript:void(0)">null#8626</a>
-      </div>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>reis@raspberrypi:~ $</title>
+		<meta
+			name="description"
+		/>
+		<meta property="og:title" content="reis@raspberrypi:~ $" />
+		<meta property="og:type" content="article" />
+    <meta name="theme-color" content="#FFA500">
+		<meta
+			property="og:description"
+		/>
+		<meta name="twitter:card" content="summary" />
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<div id="content">
+			
+		</div>
+    <div id="credits">
+      
     </div>
-  </body>
-  <script>
-    const redirect = (url) => { location.href = url; };
-    document.querySelector('#github').addEventListener('click', () => redirect('https://github.com/reisxd'));
-    document.querySelector('#mail').addEventListener('click', () => redirect('mailto:reis@turkeylist.gq'));
-    
-    const Null = ['https://github.com/vierofernando', 'https://hug-me.now.sh/'];
-    
-    document.querySelector('#qt a').addEventListener('click', () => redirect(Null[Math.floor(Math.random() * Null.length)]));
-    
-    window.addEventListener('contextmenu', e => e.preventDefault());
-    window.addEventListener('keyup', e => e.preventDefault());
-    window.addEventListener('keydown', e => e.preventDefault());
-    
-    // the most big brain idea i've ever had
-    document.querySelector('script').remove();
-  </script>
+		<noscript>
+			FATAL ERROR: Cannot load file, please enable JavaScript
+		</noscript>
+		<script src="./script.js"></script>
+	</body>
 </html>
