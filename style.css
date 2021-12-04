@@ -1,111 +1,29 @@
-html, body {
-    font-family: 'Inter';
-    margin: 0;
-    background-color: #161b22;
-    width: 100%;
-    height: 100%;
-    color: white;
-    
-    overflow-x: hidden;
-    -ms-overflow-x: hidden;
-    -moz-overflow-x: hidden;
-    -webkit-overflow-x: hidden;
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(0deg, #00000050 3px, transparent 5px);
+  pointer-events: none;
 }
-
-img, div {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
+::selection {
+  background: #0080FF;
+  text-shadow: none;
 }
-
-#main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+pre {
+  margin: 25px;
 }
-
-#qt {
-    position: fixed;
-    bottom: 20px;
-}
-
-#pfp {
-    width: 175px;
-    height: 175px;
-    border-radius: 25px;
-    border: 3px solid white;
-    cursor: grab;
-    transition-duration: 0.2s;
-}
-
-#pfp:active {
-    cursor: grabbing;
-    border: 3px solid #FF1493;
-}
-
-#name {
-    font-size: 50px;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-#founder-of {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#founder-of p {
-    font-size: 20px;
-    color: white;
-    margin: 0px 0px 0px 10px;
-}
-
-#sources {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-}
-
-#sources img {
-    margin: 0px 25px;
-}
-
-#sources img, #founder-of img {
-    cursor: pointer;
-    transition-duration: 0.2s;
-}
-
-#sources img:hover, #founder-of img:hover {
-    filter: brightness(0.5);
-    transform: translateY(-4px);
-}
-
-#sources img:active, #founder-of img:active {
-    transform: translateY(4px);
-    filter: brightness(0.2);
-}
-
-a {
-    color: #50acec;
-    transition-duration: 0.3s;
-    text-decoration: underline;
-}
-
-a:hover {
-    cursor: pointer;
-    color: #e46454;
-}
-
-a:active {
-    font-weight: bold;
-    filter: brightness(0.2);
+body {
+  background-color: black;
+  /* 92, 56, 17*/
+  background-image: radial-gradient(rgba(54, 51, 44, 0.75), black 120%);
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
 }
